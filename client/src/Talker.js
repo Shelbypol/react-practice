@@ -13,15 +13,16 @@ class Talker extends React.Component {
         alert(speech);
     }
 
-    // handleRandNum() {
-    //     return "" + Math.round(Math.random() * 10) + 1;
-    // }
+
+    handleRandNum() {
+        return Math.round(Math.random() * 10);
+    }
 
     render() {
         return (
             <div>
                 <Button handleClick={this.handleClick} />
-                <RandButton handleRandClick={Math.round(Math.random() * 10) + 1}/>
+                <RandButton handleRandNum={this.handleRandNum()}/>
             </div>
     )
     }
