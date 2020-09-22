@@ -1,12 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Button } from './Button';
-
+import {Button} from './Button';
+import {RandButton} from "./RandButton";
 
 
 class Talker extends React.Component {
 
-    talk () {
+    handleClick() {
         let speech = '';
         for (let i = 0; i < 10000; i++) {
             speech += 'blah ';
@@ -14,9 +13,19 @@ class Talker extends React.Component {
         alert(speech);
     }
 
+    // handleRandNum() {
+    //     return "" + Math.round(Math.random() * 10) + 1;
+    // }
+
     render() {
-        return <Button talk={this.talk} />;
+        return (
+            <div>
+                <Button handleClick={this.handleClick} />
+                <RandButton handleRandClick={Math.round(Math.random() * 10) + 1}/>
+            </div>
+    )
     }
 }
+
 
 export default Talker;

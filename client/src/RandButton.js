@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-export class Button extends React.Component {
+export class RandButton extends React.Component{
 
     render() {
         return (
             <button onClick={this.props.handleClick}>
-                Click me!
+                {this.props.handleRandClick} : num
             </button>
         );
     }
