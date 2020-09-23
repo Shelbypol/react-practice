@@ -6,11 +6,11 @@ import {ToggleBtn} from "./ToggleBtn";
 
 class Talker extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {randNum : Math.round(Math.random() * 10)};
-        this.handleRandNum = this.handleRandNum.bind(this);
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {randNum : Math.round(Math.random() * 10)};
+    //     this.handleRandNum = this.handleRandNum.bind(this);
+    // }
 
     handleClick() {
         let speech = '';
@@ -21,18 +21,12 @@ class Talker extends React.Component {
     }
 
 
-    handleRandNum() {
-        this.setState(
-            {randNum : Math.round(Math.random() * 10)}
-        );
-    }
-
     render() {
         return (
             <div>
                 <ToggleBtn />
                 <Button handleClick={this.handleClick} />
-                {/*<RandButton handleRandNum={this.handleRandNum()}/>*/}
+                <RandButton />
             </div>
     )
     }
