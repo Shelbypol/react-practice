@@ -2,6 +2,7 @@ import React from 'react';
 import {Button} from './Button';
 import {RandButton} from "./RandButton";
 import {ToggleBtn} from "./ToggleBtn";
+import {NavBar} from "./NavBar";
 
 
 class Talker extends React.Component {
@@ -24,8 +25,9 @@ class Talker extends React.Component {
     render() {
         return (
             <div>
+                <NavBar />
                 <ToggleBtn />
-                <Button handleClick={this.handleClick} />
+                <Button color="danger" handleClick={this.handleClick} />
                 <RandButton />
             </div>
     )
