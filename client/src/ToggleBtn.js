@@ -8,22 +8,22 @@ export class ToggleBtn extends React.Component {
 
     constructor(props){
         super(props);
-        this.state = { color: green };
-        this.changeColor = this.changeColor.bind(this);
+        this.state = { bgColor: green };
+        this.changeBgColor = this.changeBgColor.bind(this);
     }
 
-    changeColor() {
-        const newColor = this.state.color === green ? yellow : green;
-        this.setState({ color: newColor });
+    changeBgColor() {
+        const newColor = this.state.bgColor === green ? yellow : green;
+        this.setState({ bgColor: newColor });
     }
 
     render() {
         return (
-            <div style={{background: this.state.color}}>
+            <div style={{background: this.state.bgColor}}>
                 <h1>
                     Change my color
                 </h1>
-                <button onClick={this.changeColor}>
+                <button onClick={this.changeBgColor}>
                     Change color
                 </button>
             </div>

@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
 import Talker from './Talker.js';
-import { Button } from 'reactstrap';
+import Random from './RandomColorPicker/Random'
 
-import Example from './Example.js';
 
 function App() {
   return (
     <div className="App">
       <Talker/>
-      {/*<Example/>*/}
+      <Random/>
     </div>
   );
 }
