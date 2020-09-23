@@ -1,6 +1,7 @@
 import React from 'react';
+import { Button } from 'reactstrap';
 
-export class Button extends React.Component {
+export class RandButton extends React.Component {
     render() {
         return (
             <button onClick={this.props.onClick}

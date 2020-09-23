@@ -1,8 +1,10 @@
 import React from 'react';
-import {Button} from './Button';
+import {ClickMeButton} from './ClickMeButton';
 import {RandButton} from "./RandButton";
 import {ToggleBtn} from "./ToggleBtn";
 import {NavBar} from "./NavBar";
+import { Button } from 'reactstrap';
+import {Jumbotron} from "./Jumbotron";
 
 
 class Talker extends React.Component {
@@ -27,8 +29,9 @@ class Talker extends React.Component {
             <div>
                 <NavBar />
                 <ToggleBtn />
-                <Button color="danger" handleClick={this.handleClick} />
+                <ClickMeButton handleClick={this.handleClick} />
                 <RandButton />
+                <Jumbotron />
             </div>
     )
     }

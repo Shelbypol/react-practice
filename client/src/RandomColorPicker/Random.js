@@ -1,5 +1,5 @@
 import React from "react";
-import {Button} from "./Button.js";
+import {RandButton} from "./RandButton.js";
 
 class Random extends React.Component{
 
@@ -53,7 +53,7 @@ class Random extends React.Component{
                     Your color is {this.formatColor(this.state.color)}
 
                 </h1>
-                <Button onClick={this.handleClick} light={this.isLight()} />
+                <RandButton onClick={this.handleClick} light={this.isLight()} />
             </div>
         );
     }

@@ -3,8 +3,40 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { createStore } from 'redux';
+// import 'bootstrap/dist/css/bootstrap.css';
+// Put any other imports below so that CSS from your
+// components takes precedence over default styles.
 
+
+
+//STORE -> GLOBALIZED STATE
+
+//ACTION INCREMENT
+// https://www.youtube.com/watch?v=CVpUuw9XSjY 29:00 to see how to do REDUX STORE
+
+//REDUCER
+// const counter = (state = 0, action) => {
+//     switch(action.type){
+//         case 'INCREMENT' :
+//                 return state + 1;
+//         case 'DECREMENT' :
+//                 return state - 1;
+//     }const increment = () => {
+//         return {
+//             type : 'INCREMENT'
+//         }
+//     };
+// };
+
+let store = createStore(counter);
+
+//DISPLAY
+store.subscribe(() => console.log(store.getState()));
+
+
+//DISPATCH
+store.dispatch(increment());
 
 ReactDOM.render(
   <React.StrictMode>
