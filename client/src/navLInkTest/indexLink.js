@@ -1,13 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import { createStore } from 'redux';
-import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/css/bootstrap.css';
-// Put any other imports below so that CSS from your
-// components takes precedence over default styles.
+// port React from 'react';
+// import ReactDOM from 'react-dom';
+// import './index.css';
+// import App from './App';
+// import * as serviceWorker from './serviceWorker';
+// import { createStore } from 'redux';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -20,9 +18,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const counter = (state = 0, action) => {
     switch(action.type){
         case 'INCREMENT' :
-                return state + 1;
+            return state + 1;
         case 'DECREMENT' :
-                return state - 1;
+            return state - 1;
     }const increment = () => {
         return {
             type : 'INCREMENT'
@@ -40,10 +38,10 @@ store.subscribe(() => console.log(store.getState()));
 // store.dispatch(increment());
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

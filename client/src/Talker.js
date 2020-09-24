@@ -3,8 +3,7 @@ import {ClickMeButton} from './ClickMeButton';
 import {RandButton} from "./RandButton";
 import {ToggleBtn} from "./ToggleBtn";
 import {NavBar} from "./NavBar";
-import { Button } from 'reactstrap';
-import {Jumbotron} from "./Jumbotron";
+import {JumbotronStrap} from "./JumbotronStrap";
 
 
 class Talker extends React.Component {
@@ -31,7 +30,6 @@ class Talker extends React.Component {
                 <ToggleBtn />
                 <ClickMeButton handleClick={this.handleClick} />
                 <RandButton />
-                <Jumbotron />
             </div>
     )
     }
