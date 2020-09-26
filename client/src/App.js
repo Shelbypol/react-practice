@@ -3,6 +3,8 @@ import './App.css';
 import Talker from './Talker.js';
 import Random from './RandomColorPicker/Random';
 import {JumbotronStrap} from "./JumbotronStrap";
+import {Carousel} from "./Carousel";
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
       <Random/>
       <JumbotronStrap />
       <JumbotronStrap />
+      <Carousel />
     </div>
   );
 }
