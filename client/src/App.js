@@ -5,6 +5,7 @@ import Random from './RandomColorPicker/Random';
 import {JumbotronStrap} from "./JumbotronStrap";
 import {Carousel} from "./Carousel";
 
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <JumbotronStrap />
       <JumbotronStrap />
       <Carousel />
+
     </div>
   );
 }
